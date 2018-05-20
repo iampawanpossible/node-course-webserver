@@ -52,6 +52,14 @@ res.render('home.hbs', {
 });
 
 
+app.get('/project', (req, res) => {
+//  res.send('Hello Express');
+res.render('project.hbs', {
+  aboutPage: 'Project page !',
+  welcomeMsg:'Lets build together !!!'
+})
+});
+
 app.get('/bad', (req, res) => {
 //  res.send('Hello Express');
 res.send({
